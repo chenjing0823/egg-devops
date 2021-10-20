@@ -2,8 +2,8 @@
  * @Author: jing.chen
  * @Date: 2021-10-12 16:17:16
  * @LastEditors: jing.chen
- * @LastEditTime: 2021-10-15 16:16:04
- * @Description:
+ * @LastEditTime: 2021-10-19 16:30:21
+ * @Description: 用户模块 Controller
  */
 import { Controller } from 'egg';
 import { Get, Post, Prefix } from 'egg-shell-decorators';

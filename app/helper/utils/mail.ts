@@ -2,10 +2,10 @@
  * @Author: jing.chen
  * @Date: 2021-10-20 15:27:20
  * @LastEditors: jing.chen
- * @LastEditTime: 2021-10-20 15:37:30
+ * @LastEditTime: 2021-10-28 10:27:04
  * @Description:
  */
-import { MAIL_CONFIG } from '../../config/config.default';
+import { MAIL_CONFIG } from '../../config/default.config';
 
 const marked = require('marked'); // marked 转换
 const nodemailer = require('nodemailer'); // 发送邮件

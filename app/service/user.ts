@@ -2,11 +2,11 @@
  * @Author: jing.chen
  * @Date: 2021-10-12 16:44:06
  * @LastEditors: jing.chen
- * @LastEditTime: 2021-10-22 11:15:11
+ * @LastEditTime: 2021-10-28 10:27:09
  * @Description:
  */
 import { Service } from "egg";
-import { CLIENT_ID, CLIENT_SECRET } from '../config/config.default';
+import { CLIENT_ID, CLIENT_SECRET } from '../config/default.config';
 
 export default class User extends Service {
 

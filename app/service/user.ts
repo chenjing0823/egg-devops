@@ -2,7 +2,7 @@
  * @Author: jing.chen
  * @Date: 2021-10-12 16:44:06
  * @LastEditors: jing.chen
- * @LastEditTime: 2021-10-28 10:27:09
+ * @LastEditTime: 2021-10-28 10:36:38
  * @Description:
  */
 import { Service } from "egg";
@@ -11,8 +11,8 @@ import { CLIENT_ID, CLIENT_SECRET } from '../config/default.config';
 export default class User extends Service {
 
   /**
-   * @author saiyanjing
-   * @description 使用 gitLab api 获取 access_token
+   * @author: saiyanjing
+   * @description: 使用 gitLab api 获取 access_token
    */
   public async getTokenByApplications({ code }) {
     const { data: token } = await this.ctx.helper.utils.http.post({
@@ -33,8 +33,8 @@ export default class User extends Service {
   }
 
   /**
-   * @author saiyanjing
-   * @description 使用 gitLab api 获取 access_token
+   * @author: saiyanjing
+   * @description: 使用 gitLab api 获取 access_token
    */
   public async getUserToken({ username, password }) {
     const { data: token } = await this.ctx.helper.utils.http.post({
@@ -53,8 +53,8 @@ export default class User extends Service {
   }
 
   /**
-   * @author saiyanjing
-   * @description 使用 gitLab api 获取 gitLab 用户信息
+   * @author: saiyanjing
+   * @description: 使用 gitLab api 获取 gitLab 用户信息
    */
   public async getUserInfo({ access_token }) {
     const userInfo = await this.ctx.helper.api.gitLab.user.getUserInfo({
@@ -64,7 +64,7 @@ export default class User extends Service {
   }
 
   /**
-   * @author saiyanjing
+   * @author: saiyanjing
    * @description: 用户信息本地落库
    */
   public async saveUser({ userInfo }) {

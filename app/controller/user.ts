@@ -2,9 +2,10 @@
  * @Author: jing.chen
  * @Date: 2021-10-12 16:17:16
  * @LastEditors: jing.chen
- * @LastEditTime: 2021-10-22 11:12:04
+ * @LastEditTime: 2021-10-28 10:50:24
  * @Description: 用户模块 Controller
  */
+
 import { Post, Prefix, Get } from "egg-shell-decorators";
 import BaseController from "./base";
 

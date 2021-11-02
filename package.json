@@ -23,14 +23,16 @@
   },
   "dependencies": {
     "egg": "^2.6.1",
+    "egg-cors": "^2.2.3",
     "egg-helper": "^1.1.5",
+    "egg-jwt": "^3.1.7",
     "egg-scripts": "^2.6.0",
     "egg-sequelize": "^6.0.0",
     "egg-shell-decorators": "^1.6.0",
     "marked": "^1.1.1",
     "mysql2": "^2.3.2",
     "nodemailer": "^6.4.11",
-    "nunjucks": "^3.2.2"
+    "nunjucks": "^3.2.3"
   },
   "devDependencies": {
     "@types/mocha": "^2.2.40",

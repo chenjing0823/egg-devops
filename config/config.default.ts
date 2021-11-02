@@ -2,7 +2,7 @@
  * @Author: jing.chen
  * @Date: 2021-09-29 15:46:07
  * @LastEditors: jing.chen
- * @LastEditTime: 2021-10-20 16:12:54
+ * @LastEditTime: 2021-10-28 10:34:47
  * @Description: 
  */
 import { EggAppConfig, EggAppInfo, PowerPartial } from 'egg';
@@ -15,7 +15,30 @@ export default (appInfo: EggAppInfo) => {
   config.keys = appInfo.name + '_1632901564293_466';
 
   // add your egg config in here
-  config.middleware = [];
+  config.middleware = ["jwtAuth", "errorHandler"];
+
+  config.jwtAuth = {};
+  config.errorHandler = {};
+
+  // add your egg config in here
+  config.security = {
+    csrf: {
+      enable: false,
+    },
+    // 白名单
+    // domainWhiteList: '*'
+  };
+
+  config.cors = {
+    origin: (ctx) => ctx.get("origin"),
+    credentials: true,
+    allowMethods: "GET,HEAD,PUT,POST,DELETE,PATCH",
+  };
+
+  config.jwt = {
+    // jwt配置项
+    secret: "123456",
+  };
 
   // add your special config in here
   const bizConfig = {

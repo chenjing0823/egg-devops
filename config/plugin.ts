@@ -2,7 +2,7 @@
  * @Author: jing.chen
  * @Date: 2021-09-29 15:46:07
  * @LastEditors: jing.chen
- * @LastEditTime: 2021-10-28 14:43:53
+ * @LastEditTime: 2021-11-02 15:58:34
  * @Description:
  */
 import { EggPlugin } from 'egg';
@@ -26,6 +26,10 @@ const plugin: EggPlugin = {
   helper: {
     enable: true,
     package: 'egg-helper',
+  },
+  io: {
+    enable: true,
+    package: 'egg-socket.io',
   },
 };
 

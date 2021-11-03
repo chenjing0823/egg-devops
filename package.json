@@ -10,7 +10,7 @@
   "scripts": {
     "start": "egg-scripts start --daemon --title=egg-server-example",
     "stop": "egg-scripts stop --title=egg-server-example",
-    "dev": "egg-bin dev",
+    "dev": "egg-bin dev --sticky",
     "debug": "egg-bin debug",
     "test-local": "egg-bin test",
     "test": "npm run lint -- --fix && npm run test-local",
@@ -22,6 +22,7 @@
     "clean": "ets clean"
   },
   "dependencies": {
+    "@types/jenkins": "^0.23.2",
     "egg": "^2.6.1",
     "egg-cors": "^2.2.3",
     "egg-helper": "^1.1.5",
@@ -29,6 +30,9 @@
     "egg-scripts": "^2.6.0",
     "egg-sequelize": "^6.0.0",
     "egg-shell-decorators": "^1.6.0",
+    "egg-socket.io": "^4.1.6",
+    "jenkins": "^0.28.1",
+    "jenkins-api": "^0.3.1",
     "marked": "^1.1.1",
     "mysql2": "^2.3.2",
     "nodemailer": "^6.4.11",

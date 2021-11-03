@@ -2,7 +2,7 @@
  * @Author: jing.chen
  * @Date: 2021-09-29 15:46:07
  * @LastEditors: jing.chen
- * @LastEditTime: 2021-10-28 10:34:47
+ * @LastEditTime: 2021-11-02 15:59:29
  * @Description: 
  */
 import { EggAppConfig, EggAppInfo, PowerPartial } from 'egg';
@@ -54,6 +54,22 @@ export default (appInfo: EggAppInfo) => {
     port: 3306,
     username: "root",
     password: "cj950823",
+  };
+
+
+  // socketio 配置
+  config.io = {
+    init: {}, // passed to engine.io
+    namespace: {
+      "/": {
+        connectionMiddleware: [],
+        packetMiddleware: [],
+      },
+      "/example": {
+        connectionMiddleware: [],
+        packetMiddleware: [],
+      },
+    },
   };
   // the return config will combines to EggAppConfig
   return {

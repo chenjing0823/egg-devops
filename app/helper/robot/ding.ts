@@ -2,7 +2,7 @@
  * @Author: jing.chen
  * @Date: 2021-10-20 15:35:56
  * @LastEditors: jing.chen
- * @LastEditTime: 2021-10-28 10:27:07
+ * @LastEditTime: 2021-11-03 11:25:15
  * @Description:
  */
 const crypto = require('crypto');
@@ -13,7 +13,7 @@ import { DING_SEND_URL, DING_SECRET } from '../../config/default.config';
 export default app => {
   return {
     /**
-     * @author: Cookie
+     * @author: saiyanjing
      * @description: 加签发送消息
      */
     async send(content) {

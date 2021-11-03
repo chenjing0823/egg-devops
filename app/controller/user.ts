@@ -2,7 +2,7 @@
  * @Author: jing.chen
  * @Date: 2021-10-12 16:17:16
  * @LastEditors: jing.chen
- * @LastEditTime: 2021-10-28 10:50:24
+ * @LastEditTime: 2021-11-03 11:10:45
  * @Description: 用户模块 Controller
  */
 
@@ -51,9 +51,9 @@ export default class UserController extends BaseController {
     ctx.cookies.set('authorization', token, {
       maxAge: 1000 * 3600 * 24, // cookie存储一天 设置过期时间后关闭浏览器重新打开cookie还存在
       httpOnly: true, // 仅允许服务获取,不允许js获取
-      domain: '.cookieboty.com' // 设置cookie跨域
+      domain: '.saiyanjing.com' // 设置cookie跨域
     });
-    ctx.redirect(`http://fe.cookieboty.com`);
+    // ctx.redirect(`http://fe.cookieboty.com`);
   }
 
   /**

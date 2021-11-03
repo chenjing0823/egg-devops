@@ -18,6 +18,7 @@ import 'egg-sequelize';
 import 'egg-jwt';
 import 'egg-cors';
 import 'egg-helper';
+import 'egg-socket.io';
 import { EggPluginItem } from 'egg';
 declare module 'egg' {
   interface EggPlugin {
@@ -37,5 +38,6 @@ declare module 'egg' {
     jwt?: EggPluginItem;
     cors?: EggPluginItem;
     helper?: EggPluginItem;
+    io?: EggPluginItem;
   }
 }

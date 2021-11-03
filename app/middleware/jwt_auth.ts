@@ -2,7 +2,7 @@
  * @Author: jing.chen
  * @Date: 2021-10-28 10:32:23
  * @LastEditors: jing.chen
- * @LastEditTime: 2021-10-28 10:32:23
+ * @LastEditTime: 2021-11-03 11:10:05
  * @Description: jwt 中间件
  */
 const excludeUrl = ["/user/getUserToken", '/user/getTokenByApp'];

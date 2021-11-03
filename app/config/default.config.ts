@@ -2,7 +2,7 @@
  * @Author: jing.chen
  * @Date: 2021-10-20 15:25:47
  * @LastEditors: jing.chen
- * @LastEditTime: 2021-10-21 16:35:58
+ * @LastEditTime: 2021-11-02 20:21:47
  * @Description:
  */
 
@@ -11,7 +11,7 @@
  */
 
 // 反向代理git url
-const GIT_URL = 'http://192.168.160.88:8888/';
+const GIT_URL = 'http://gitlab.saiyanjing.com/';
 
 // app 授权客户端id 与 秘钥
 const CLIENT_ID = 'ad1cd352d473da4f645942b334101e2757c25e7829a5cfb16c31dcd4cae6b299';

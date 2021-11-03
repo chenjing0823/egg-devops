@@ -5,6 +5,7 @@ import 'egg';
 import ExportBase from '../../../app/controller/base';
 import ExportBuild from '../../../app/controller/build';
 import ExportHome from '../../../app/controller/home';
+import ExportNotices from '../../../app/controller/notices';
 import ExportProject from '../../../app/controller/project';
 import ExportUser from '../../../app/controller/user';
 
@@ -13,6 +14,7 @@ declare module 'egg' {
     base: ExportBase;
     build: ExportBuild;
     home: ExportHome;
+    notices: ExportNotices;
     project: ExportProject;
     user: ExportUser;
   }

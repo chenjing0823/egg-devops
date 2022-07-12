@@ -14,9 +14,9 @@
 const GIT_URL = 'http://gitlab.saiyanjing.com/';
 
 // app 授权客户端id 与 秘钥
-const CLIENT_ID = 'ad1cd352d473da4f645942b334101e2757c25e7829a5cfb16c31dcd4cae6b299';
-const CLIENT_SECRET = '16dd1566e89444179c33d955efabdd25eed7cab62ea751d77c1ab36859bda27a';
-
+const CLIENT_ID = '72c17271a296ba4059bc18d98fdd37df3c7c6db896a2e71daf7f884d2b953d6f';
+const CLIENT_SECRET = '11afd339c0edf7c48c666e0ca139bbbf3c4f4091d4777b5d44a2d9b17505b382';
+// http://gitlab.saiyanjing.com/oauth/authorize?client_id=72c17271a296ba4059bc18d98fdd37df3c7c6db896a2e71daf7f884d2b953d6f&redirect_uri=http://devops.saiyanjing.com/user/getTokenByApp&response_type=code
 // 钉钉机器人
 
 

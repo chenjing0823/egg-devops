@@ -42,7 +42,7 @@ export default (app) => {
      * @description: 带 version 的通用 api 请求
      */
     async methodV({ url, method, params = {}, query = {} }: IMethodV) {
-      let sendUrl = `${GIT_URL}/api/v4${url}`
+      let sendUrl = `${GIT_URL}api/v4${url}`
       if (query) {
         sendUrl = `${sendUrl}?${qs.stringify(query)}`;
       }

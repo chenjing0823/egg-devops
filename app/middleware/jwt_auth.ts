@@ -26,7 +26,7 @@ export default () => {
           token.replace("Bearer ", ""),
           ctx.app.config.jwt.secret
         );
-        console.log(deCode)
+        console.log('deCode', deCode)
         ctx.user = deCode;
         await next();
       } catch (error) {

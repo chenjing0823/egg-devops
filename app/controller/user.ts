@@ -2,7 +2,7 @@
  * @Author: jing.chen
  * @Date: 2021-10-12 16:17:16
  * @LastEditors: jing.chen
- * @LastEditTime: 2021-11-03 11:10:45
+ * @LastEditTime: 2021-11-03 19:27:33
  * @Description: 用户模块 Controller
  */
 
@@ -53,7 +53,7 @@ export default class UserController extends BaseController {
       httpOnly: true, // 仅允许服务获取,不允许js获取
       domain: '.saiyanjing.com' // 设置cookie跨域
     });
-    // ctx.redirect(`http://fe.cookieboty.com`);
+    ctx.redirect(`fe.saiyanjing.com`);
   }
 
   /**
@@ -74,6 +74,16 @@ export default class UserController extends BaseController {
       username,
       password,
     });
+    /**
+     * {
+            "access_token": "d0e7846a32b363edb0f9e3a45d7dec00c9971982f878208f51fc17c27beb7d45",
+            "token_type": "Bearer",
+            "refresh_token": "90df8cb54b18d3050380ce519ee0554c45b0a80cd025c3c1fdec41b45674efec",
+            "scope": "api",
+            "created_at": 1634283297
+        }
+     */
+    // this.ctx.body = userToken
 
     // gitLab 获取用户信息
     const userInfo = await ctx.service.user.getUserInfo({

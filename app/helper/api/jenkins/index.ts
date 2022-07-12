@@ -17,7 +17,7 @@ const getJenkins = function (
 ) {
   const jenkinsConfig = {
     h5: {
-      baseUrl: "http://saiyanjing:11a42946be3bd4f3c5719468a9f3f14067@jenkins.saiyanjing.com/",
+      baseUrl: "http://saiyanjing:11fd4a8b40c2f75a8bf3a9a59e1a18b9b6@jenkins.saiyanjing.com/",
       // JENKINS_URL/job/fe-base/build?token=TOKEN_NAME 或者 /buildWithParameters?token=TOKEN_NAME
       // http://test:fe20f2d33760fbeec0a362dbbf59cd18@your-jenkins.com/job/JobName/build?token=iFdsjS24SDFqp53JGsd9k0Cm
       // 具体参考 https://blog.csdn.net/weixin_33877885/article/details/93644759

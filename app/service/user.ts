@@ -22,7 +22,7 @@ export default class User extends Service {
         client_id: CLIENT_ID,
         client_secret: CLIENT_SECRET,
         code,
-        redirect_uri: 'http://devops.saiyanjing.com/user/getTokenByApp',
+        redirect_uri: `http://devops.saiyanjing.com/user/getTokenByApp`,
       },
     });
 
